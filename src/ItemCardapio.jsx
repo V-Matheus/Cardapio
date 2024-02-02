@@ -1,15 +1,15 @@
 import React from 'react';
 import { enroladinhoMignon } from './cardapio';
 
-const ItemCardapio = () => {
+const ItemCardapio = ({nome, preco, descricao, imagem}) => {
   return (
     <div className="container-item-cardapio">
       <div>
-        <h2>{enroladinhoMignon.nome}</h2>
-        <p>{enroladinhoMignon.preco}</p>
-        <p>{enroladinhoMignon.descricao}</p>
+        <h2>{nome}</h2>
+        <p>{preco}</p>
+        <p>{descricao}</p>
       </div>
-      <img src={enroladinhoMignon.imagem} alt="" />
+      <img src={imagem} alt="" />
     </div>
   );
 };
